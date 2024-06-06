@@ -29,7 +29,7 @@ public class User implements Serializable {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "profile", nullable = false, length = 25)
-    private Profile profile;
+    private Profile profile = Profile.PROFILE_CLIENT;
 
     @Column(name = "creation_date")
     private LocalDateTime creationDate;
